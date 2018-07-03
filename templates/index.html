@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% load sekizai_tags %}
+
+{% block active_index %} active {% endblock %}
+
+{% block content %}
+
+<title>CXMOOC | 首页</title>
+
+{% addtoblock "css" %}
+<link rel="stylesheet" href="{{STATIC_URL}}css/touchTouch.css" type="text/css" media="screen">
+<link rel="stylesheet" href="{{STATIC_URL}}css/kwicks-slider.css" type="text/css" media="screen">
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery.kwicks-1.5.1.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/touchTouch.jquery.js"></script>
+<script> jQuery('.magnifier').touchTouch(); </script>
+{% endaddtoblock %}
+
+
+<div class="spinner"></div> 
+<div class="bg-content">
+     <div class="container">
+   	<div class="row">
+       <!-- slider -->
+       <div class="flexslider">
+         <ul class="slides">
+           <li> <img src="{{STATIC_URL}}imgs/slide-1.jpg" alt="" ><a href="/course/course_content"></a></li>
+           <li> <img src="{{STATIC_URL}}imgs/slide-2.jpg" alt="" > </li>
+           <li> <img src="{{STATIC_URL}}imgs/slide-3.jpg" alt="" > </li>
+           <li> <img src="{{STATIC_URL}}imgs/slide-4.jpg" alt="" > </li>
+           <li> <img src="{{STATIC_URL}}imgs/slide-5.jpg" alt="" > </li>
+  
+         </ul>
+       </div>
+       <span id="responsiveFlag"></span>
+       <div class="block-slogan">
+          <h2>MOE课</h2>
+           <p>首个专注于二次元的大规模在线公开课平台</p>
+           <p>我们所热爱的次元，由我们共同创造!</p>
+       </div>
+   </div>
+</div>
+     
+<div id="content">
+<div class="row-1">
+    <div class="container">
+		<div class="row" style="padding-top:20px">
+     <ul class="portfolio">           
+       <li class="col-lg-3"><a href="/course/course_content" class="magnifier" ><img alt="" src="{{STATIC_URL}}imgs/work/1.jpg"></a></li> 
+       <li class="col-lg-3"><a href="/course/course_content" class="magnifier" ><img alt="" src="{{STATIC_URL}}imgs/work/2.jpg"></a></li> 
+       <li class="col-lg-3"><a href="/course/course_content" class="magnifier" ><img alt="" src="{{STATIC_URL}}imgs/work/3.jpg"></a></li> 
+       <li class="col-lg-3"><a href="/course/course_content" class="magnifier" ><img alt="" src="{{STATIC_URL}}imgs/work/4.jpg"></a></li> 
+       <li class="col-lg-3"><a href="/course/course_content" class="magnifier" ><img alt="" src="{{STATIC_URL}}imgs/work/5.jpg"></a></li> 
+       <li class="col-lg-3"><a href="/course/course_content" class="magnifier" ><img alt="" src="{{STATIC_URL}}imgs/work/6.jpg"></a></li> 
+       <li class="col-lg-3"><a href="/course/course_content" class="magnifier" ><img alt="" src="{{STATIC_URL}}imgs/work/7.jpg"></a></li> 
+       <li class="col-lg-3"><a href="/course/course_content" class="magnifier" ><img alt="" src="{{STATIC_URL}}imgs/work/8.jpg"></a></li>
+     </ul>
+  </div>
+ 	</div>
+</div>
+<div class="row-2">
+    <div class="container">
+    	<h3>第二期课程一生悬命制作中。。。。</h3>
+        <h3>第二期课程的各位授课人正在与Moe课团队一起紧张的制作新一轮课程。</h3>
+        <p> 以上的图片均暗示了二期八门课程的某一方面。做出猜测并@Moe课官方微博；8门课程猜测最接近的将会获得love live香港演唱会门票一张哦。</p>
+  	</div>
+</div>
+<div class="row-1">
+    <div class="container">
+    <div class="row"><h1 class="text-center">课程推荐</h1></div>
+    <div class="row">
+    <ul class="portfolio">
+	    <li class="col-lg-3">
+	       <h2>RPG游戏史</h2>
+	       <img src="{{STATIC_URL}}imgs/blog-featured-1.jpg">
+	       <section>
+		       <h4><a href="/course/course_content">类型游戏的传承与变革</a></h4>
+		       <p>从最终幻想到勇气默示录，作为内核高度一致的类型游戏，RPG揭示了怎样的叙事学理论呢</p>
+		       <a href="/course/course_content" class="btn btn-danger">Read More</a>
+	       </section>
+	    </li>
+	    <li class="col-lg-3">
+	       <h2>二次元的本体论</h2>
+	       <img src="{{STATIC_URL}}imgs/blog-featured-2.jpg" alt="">
+	       <section>
+		       <h4><a href="/course/course_content">二次元里有什么？</a></h4>
+		       <p>一切。通过学习北美分析哲学学说，构建牢不可摧萌之形而上学</p>
+	           <a href="/course/course_content" class="btn btn-danger">Read More</a>
+		   </section>
+	    </li>
+        <li class="col-lg-3">
+            <h2>TV动画简史</h2>
+            <img src="{{STATIC_URL}}imgs/blog-featured-3.jpg" alt="">
+            <section>
+	       	  	<h4><a href="/course/course_content">每周一集背后的动画工业界</a></h4>
+	            <p>从上色方式到业界结构，TV动画的一切与日本社会的某种精神气质紧紧相连。而那是什么呢？</p>
+	            <a href="/course/course_content" class="btn btn-danger">Read More</a>
+            </section>
+        </li>
+        <li class="col-lg-3">
+	         <h2>logo与设计</h2>
+	         <img src="{{STATIC_URL}}imgs/blog-featured-4.jpg" alt="">
+	         <section>
+	        	 <h4><a href="/course/course_content">什么样的logo设计是好设计</a></h4>
+	             <p>对，就是Moe课那样的。让我们来告诉你为什么....</p>
+	             <a href="/course/course_content" class="btn btn-danger">Read More</a>
+	         </section>
+        </li>
+     </ul>
+     </div>
+     </div>
+  	 </div>
+ </div>
+
+<div class="container" style="padding:20px 0 30px 0">
+        <div class="row">
+        <div class="col-lg-6">
+            <h3>关于我们</h3>
+            <div style="padding-top: 10px">
+            <img src="{{STATIC_URL}}imgs/15.jpg" style="float:left; padding-right: 20px;" height="130px"/>
+            <div style="padding-right: 30px">
+                  <p style="color:#efefef">Moe课由一支年轻的团队运营，我们的成员散布于北美，日本和国内。我们希望以MOOC的形式，推动国内二次元文化的健康发展。</p>
+                  <p>我们欢迎同样是“宅”的里加入我们。无论是作为授课人还是作为创业的伙伴。如果你有任何想分享，传播，教学的知识，技能，理论，请联系xiaotingliu0801@gmail.com</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+              <h3>Some quick links</h3>
+                <div>
+                    <ul class="list list-pad">
+                          <li><a href="#">Campaigns</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list list-pad">
+                          <li><a href="#">Campaigns</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list list-pad">
+                          <li><a href="#">Campaigns</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list list-pad">
+                          <li><a href="#">Advertising</a></li>
+                          <li><a href="#">Lifestyle</a></li>
+                          <li><a href="#">Love story</a></li>
+                          <li><a href="#">Landscapes</a></li>
+                    </ul>
+                </div>
+            </div>
+      </div>
+        </div>
+  </div>
+
+{% endblock %}

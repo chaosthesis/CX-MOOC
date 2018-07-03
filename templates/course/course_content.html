@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load cms_tags %}
+
+{% block content %}
+
+<title>CXMOOC | CourseDev</title>
+
+<div class="bg-content">
+    <div class="course-content">
+	<div class="container">
+    	<div class="instructor-bio col-md-4">
+    		<ul class="list-inline">
+    			<li><img src="{{STATIC_URL}}imgs/instructor/Aziza-Chaouni.jpg" class="img-circle" alt=""></li>
+    			<li><h3>Aziza Chaouni</h3><i>Architect + ecotourism specialist</i></li>
+    		</ul>
+    		<p>The Fez River winds through the medina of Fez, Morocco—a mazelike medieval city that’s a World Heritage site. Once considered the “soul” of this celebrated city, the river succumbed to sewage and pollution, and in the 1950s was covered over bit by bit until nothing remained. TED Fellow Aziza Chaouni recounts her 20 year effort to restore this river to its former glory, and to transform her city in the process.</p>
+            <p>{% render_placeholder course.description %}</p>
+    	</div>
+    	<div class="course-video col-md-8"><img src="{{STATIC_URL}}imgs/course/coursedev-1.png" alt=""></div>
+    </div>
+    </div>
+</div>
+
+<div class="discuss-content">
+	<h2>Discuss</h2>
+</div>
+
+{% endblock %}

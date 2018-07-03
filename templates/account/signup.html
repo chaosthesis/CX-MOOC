@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load sekizai_tags %}
+
+{% block active_account %} active {% endblock %}
+
+{% block content %}
+
+{% addtoblock "css" %}
+<link href="{{STATIC_URL}}css/login-signup.css" rel="stylesheet">
+{% endaddtoblock %}
+
+<div id="fullBg">
+<div class="container">
+	{% if user.is_authenticated %}
+          <p class="text-center tip-text">欢迎，{{ user.username }}。您已成功登录。</p>
+    {% else %}
+
+    <form class="form-account" method="post">{% csrf_token %}     
+      <h1 class="form-account-heading">新建账户</h1>
+      <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+      <input type="password" class="form-control" name="password1" placeholder="Password" required>
+      <input style="margin-bottom: 30px;" class="form-control" name="password2" type="password" placeholder="Password Confirmation" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>   
+    </form>
+    {% endif %}
+</div>
+</div>
+
+{% endblock %}

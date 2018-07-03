@@ -1,0 +1,14 @@
+{% load endless %}
+{% paginate courses %}
+		{% for course in courses %}
+			<div class="thumbnail-course col-lg-12">
+            	<img src="{{course.post.url}}" alt="">
+                <div class="col-lg-8 course-info">
+                    <p>{{course.instructor.last_name}}{{course.instructor.first_name}}</p>
+                    <a href="#">{{course.name}}</a>
+                    <p>{{course.description}}</p>
+                </div>
+                <div class="col-lg-1 course-date">{{course.date_added}}</div>
+            </div>
+         {% endfor %}
+{% show_more %}

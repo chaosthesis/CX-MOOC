@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load sekizai_tags %}
+
+{% block active_account %} active {% endblock %}
+
+{% block content %}
+
+<title>CXMOOC | Log in</title>
+{% addtoblock "css" %}
+	<link rel="stylesheet" href="{{STATIC_URL}}css/login-signup.css" type="text/css" media="screen">
+{% endaddtoblock %}
+
+<div id="fullBg">
+<div class="container">
+	{% if user.is_authenticated %}
+          <p class="text-center tip-text">欢迎，{{ user.username }}。您已成功登录。</p>
+    {% else %}
+    <form class="form-account" method="post">{% csrf_token %}     
+      <h1 class="form-account-heading">欢迎，</h1>
+      <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+      <input type="password" style="margin-bottom: 30px;" class="form-control" name="password" placeholder="Password" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>   
+    </form>
+    <p class="text-center"><a href="/account/signup/" class="tip-text"><strong>注册</strong>一个新账户</a></p>
+    {% endif %}
+</div>
+</div>
+
+{% endblock %}

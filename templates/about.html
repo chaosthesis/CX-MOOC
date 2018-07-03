@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block active_about %} active {% endblock %}
+
+{% block content %}
+
+
+    <title>CXMOOC | 关于</title>
+
+    <link href="{{STATIC_URL}}css/carousel.css" rel="stylesheet">
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol> 
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>以最认真的形式，做最有趣的教育</h1>
+              <p>  <code>游戏</code> <code>动漫</code> <code>轻小说</code> <code>宅舞</code> <code>鬼畜</code> </p>
+              <p>  我们的次元，存在于那里的真理，让我们共同探寻 </p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.scp-wiki.net/" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>交互，不只是弹幕</h1>
+              <p>你曾好奇飘过的弹幕背后是一个怎样的人吗？还记得读到一条对上电波的弹幕的感动吗？更强的交互性，属于你的web 2.0。与屏幕另一边的ta，一同学习！</p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.scp-wiki.net/" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><b>向爱与希望的次元进击！</b></h1>
+              <p>Seid ihr das Essen?  Nein, wir sind der Jäger! </p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.scp-wiki.net/" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <div class="container marketing">
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 150px; height: 150px;">
+          <h2>通史</h2>
+          <p><code>RPG</code> <code>Galgame</code> <code>漫画</code> <code>TVA/OVA</code> <code>轻小说</code> <code>鬼畜素材</code> <code>アイドル</code></p>
+          <p> 作为一种亚文化，各种二次元文化产品有着怎样的发展轨迹呢？是什么样的因缘际会形成了今天的二次元呢？第一批上线的日本TV动画通史，Galgame通史，RPG游戏史。三大通史课程为您娓娓道来。</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 120px; height: 120px;">
+          <h2>研究</h2>
+          <p>什么是二次元，而二次元又是什么呢？什么使得了舰これ成为了话题作品？又是什么让μ's成为了横跨次元的偶像企划？白学圆学新房学，一切关于二次元的学问和研究。第一期为大家带来二次元的存在论，用分析哲学的思路来研究二次元的魅力。</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 100px; height: 100px;">
+          <h2>制作</h2>
+          <p>想要成为VOCALOID殿堂P主，想要成为MAD大手，想要制作独立游戏，想要学作曲编曲，想要画画做3D，想要学钢琴古琴吉他小提琴？放过安西教练吧！来Moeke成为全能技术宅！！！</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">MOOC 大规模在线公开课 <span class="text-muted"> 改变世界的教育实验 </span></h2>
+          <p class="lead">MOOC，这场从加州Mountain View开始的伟大教育实验正在改变关于教育的定义。作为第一个以二次元文化为核心的大规模在线公开教育平台，Moe课愿与你一同创造世界。</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> 学习 <span class="text-muted">以热爱之名</span></h2>
+          <p class="lead">世界を系ぐ锁を各々胸に，奏でるのは可能性の背面，Hintere von der Möglichkeit，苍穹を舞え.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> 次元 <span class="text-muted"> 在此交融 </span></h2>
+          <p class="lead">来自中国的与来自日本的授课人，圈内大神与默默无名的技术宅，二次元的菊苣与三次元的教授；Moe课将会有各种不同背景的授课人。次元之间本不存在墙，Moe课鼓励任何形式的知识传承，交流，互动。我们相信一切皆是教育。</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+    </div><!-- /.container -->
+
+    <script src="{{STATIC_URL}}js/docs.min.js"></script>
+
+{% endblock %}
